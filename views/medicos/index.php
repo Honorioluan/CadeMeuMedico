@@ -11,10 +11,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <h1>Médicos</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+
 <div class="row">
       <?php foreach ($medicos as $key => $linha):?>
           <div class="col-lg-3 text-center">

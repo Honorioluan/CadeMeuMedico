@@ -76,7 +76,7 @@ class MedicoHasEspecialidades extends \yii\db\ActiveRecord
      */
     public function getMedico()
     {
-        return $this->hasOne(Medico::className(), ['Medico_id' => 'Medico_id']);
+        return $this->hasOne(Medicos::className(), ['Medico_id' => 'Medico_id']);
     }
 
     /**

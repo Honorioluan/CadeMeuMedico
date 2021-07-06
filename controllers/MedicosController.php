@@ -24,4 +24,5 @@ class MedicosController extends \yii\web\Controller
         return $this->render('view',['medico'=>$medico]);
     }
 
+
 }

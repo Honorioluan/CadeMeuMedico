@@ -29,10 +29,15 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div>
             <div class="col-md-6">
-                <h2>Medico</h2>
+                <h2>Medicos</h2>
                 <ul class="list-group list-group-flush">
                 <?php foreach($clinicas->medicoHasEspecialidades as $key => $medico): ?>
-                  
+                    <?php $auxMedicos[$medico->medico->Medico_id]['Nome'] = $medico->medico->Nome ?>
+                    <?php $auxMedicos[$medico->medico->Medico_id]['id'] = $medico->medico->Medico_id ?>
+                <?php endforeach; ?>
+                
+                <?php foreach($auxMedicos as $key => $medicos): ?>
+                    <li class="list-group-item"><?=$medicos['Nome']?></li>
                 <?php endforeach; ?>
                 </ul>
             </div>
